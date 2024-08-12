@@ -1,0 +1,39 @@
+#rock paper scissorss game
+import random
+user_input=input("enter your choice(rock,paper,scissors):")
+possible_choices=["rock","paper","scissors"]
+computer_input=random.choice(possible_choices)
+
+print("you chose:",user_input)
+print("computer chose:",computer_input)
+
+if user_input==computer_input:
+    print("it is a draw!")
+    
+elif user_input=="rock":
+    if computer_input=="paper":
+        print("you lose!! paper will cover the rock")
+    else:
+        print("user wins!! rock will break the scissors")
+        
+elif user_input=="scissors":
+    if computer_input=="paper":
+        print("user wins!! scissors will cut the paper")
+    else:
+        print("you lose!! rock will break the scissors")
+        
+elif user_input=="paper":
+    if computer_input=="rock":
+        print("user wins!! paper will cover the rock")
+    else:
+        print("you lose!! scissors will cut the paper") 
+        
+a=input("Do you want to play again?(y/n):")
+if a == 'y':
+    print("play again!!")
+    
+elif a =='n':
+    print("Game Over!!!")
+    
+        
+                        
